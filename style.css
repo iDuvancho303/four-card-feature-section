@@ -90,8 +90,13 @@ footer {
 .box-blue::after {
     background-color: hsl(212, 86%, 64%);
 }
-/*
-<style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
+.box-push {
+    transform: translateY(50%);
+}
+
+@media (max-width: 775px) {
+    .box-push {
+        transform: translateY(0);
+    }
+}
